@@ -1,5 +1,5 @@
-import numpy as np
-from layer import Layer
+import numpy as np # type: ignore
+from layer import Layer # type: ignore
 
 class Dense(Layer):
     def __init__(self, input_size, output_size):
