@@ -1,7 +1,7 @@
 import numpy as np # type: ignore
-from layer import Layer # type: ignore
+from BaseLayer import BaseLayer # type: ignore
 
-class Dense(Layer):
+class Dense(BaseLayer):
     def __init__(self, input_size, output_size):
         self.weights = np.random.randn(output_size, input_size)
         self.bias = np.random.randn(output_size, 1)
